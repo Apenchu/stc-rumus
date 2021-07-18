@@ -217,14 +217,7 @@ body {
 
 
 /* Responsive */
-@media (max-width:1024px) {
-    .materi img {
-        margin-top: -5em;
-    }
-
-}
-
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     .materi img {
         margin-top: -3em;
     }
