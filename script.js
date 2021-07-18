@@ -973,7 +973,7 @@ $(function() {
 `);
 
         $.ajax({
-            url: 'http://localhost/rumusV2/data/submateri_fisika.php',
+            url: 'data/submateri_fisika.php',
             dataType: 'json',
             success: function(data) {
                 $.each(data, function(i, hasil) {
@@ -982,7 +982,7 @@ $(function() {
                 <li class="sub-materi mt-2">
                     <a href="#rumus" class="` + hasil.class_submateri + `">` + hasil.judul_submateri + `</a>
                 </li>
-            </ul>
+            </ul>      
         `);
 
                 });
@@ -990,7 +990,7 @@ $(function() {
         });
 
         setTimeout(function() {
-            $('.').removeClass('menampilkan_dari_atas');
+            $('.isi_materi').removeClass('menampilkan_dari_atas');
         }, 2000);
 
     });
