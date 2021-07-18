@@ -1,0 +1,237 @@
+body {
+    font-family: "Inconsolata", monospace, arial;
+}
+
+/* PERKENALAN */
+.perkenalan h1 span {
+    font-weight: bold;
+    color: rgb(65, 84, 255);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    animation: perkenalan-h1 5s ease alternate forwards infinite;
+}
+
+.perkenalan .marah {
+    font-family: "Kirang Haerang", monospace, arial;
+    color: rgb(253, 76, 76);
+}
+
+.perkenalan h3 span {
+    font-family: "Kirang Haerang", monospace, arial;
+    color: rgb(253, 76, 76);
+}
+
+.perkenalan img {
+    width: 100%;
+    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.5));
+
+}
+
+
+/* MATERI */
+.materi .navigasi-materi a {
+    background-color: rgb(65, 84, 255);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 0.3em;
+    transition: 0.5s;
+}
+
+.materi .navigasi-materi a:hover {
+    background-color: rgb(253, 76, 76);
+}
+
+.materi img {
+    width: 100%;
+    margin-top: -9em;
+    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.5));
+
+}
+
+.materi h4 {
+    background-color: rgb(65, 84, 255);
+    color: white;
+    transition: all 0.5s;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.materi h4:hover {
+    background-color: rgb(253, 76, 76);
+    margin-top: -0.1em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.materi .container h3 {
+    margin-top: 3em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    animation: perkenalan-h1 5s ease alternate forwards infinite;
+}
+
+.materi .list-group {
+    list-style: none;
+}
+
+.materi .sub-materi {
+    text-align: center;
+    background-color: rgb(65, 84, 255);
+    border-radius: 2em;
+    padding: 0.5em;
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.materi .sub-materi:hover {
+    background-color: rgb(253, 76, 76);
+}
+
+
+.materi .sub-materi a {
+    color: white;
+    text-decoration: none;
+}
+
+/* RUMUS */
+.rumus {
+    background-color: rgb(65, 84, 255);
+    margin-top: -1em;
+}
+
+.rumus .card {
+    width: 50%;
+    margin: auto;
+    border-radius: 2em;
+    box-shadow: 0px 0px 1px 2px rgb(70, 70, 70, 0.5);
+}
+
+.rumus .tombol_hitung {
+    text-align: center;
+    background-color: rgb(65, 84, 255);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin: 0em 0.5em 1em 0.5em;
+    color: white;
+    cursor: pointer;
+}
+
+.rumus .bab_materi {
+    cursor: pointer;
+}
+
+.rumus .bab_materi .tombol_bab_materi {
+    text-align: center;
+    padding: 0.5em;
+    margin-right: 1em;
+    margin-left: 1em;
+    background-color: white;
+    box-shadow: 0px 0px 1px 2px rgb(70, 70, 70, 0.5);
+    cursor: pointer;
+}
+
+.rumus .bab_materi .tombol_bab_materi a {
+    color: black;
+    text-decoration: none;
+}
+
+/* FOOTER */
+.svg_footer {
+    margin-top: 15em;
+}
+
+.footer {
+    background-color: rgb(65, 84, 255);
+}
+
+.footer h3 {
+    color: white;
+}
+
+.footer .bi-instagram {
+    color: purple;
+}
+
+.footer .bi-github {
+    color: black;
+}
+
+.footer .bi-twitter {
+    color: lightblue;
+}
+
+.footer .bi-facebook {
+    color: blue;
+}
+
+.footer p,
+.footer a {
+    color: white;
+}
+
+.footer .bi-heart-fill {
+    color: red;
+}
+
+.footer .bi-headphones {
+    color: black;
+}
+
+
+.footer .bi-cup-straw {
+    color: orange;
+}
+
+/* Animasi */
+.menampilkan_dari_atas {
+    animation: dari_atas 2s ease alternate;
+}
+
+@keyframes perkenalan-h1 {
+    0% {
+        color: rgb(66, 85, 255);
+    }
+
+    50% {
+        color: rgb(49, 255, 49);
+    }
+
+    100% {
+        color: rgb(253, 76, 76);
+    }
+}
+
+@keyframes dari_atas {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Responsive */
+@media (max-width:1024px) {
+    .materi img {
+        margin-top: -5em;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .materi img {
+        margin-top: -3em;
+    }
+
+    .materi .sub-materi {
+        padding: 0.3em;
+        border-radius: 1em;
+    }
+}
