@@ -243,7 +243,7 @@ else if (isset($_POST['menghitung_rl_hambatan_listrik'])) {
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="html load">
 
 <head>
     <!-- Required meta tags -->

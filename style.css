@@ -188,6 +188,22 @@ body {
     animation: dari_atas 2s ease alternate;
 }
 
+.load {
+    animation: load 2s ease alternate;
+}
+
+@keyframes load {
+    0% {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes perkenalan-h1 {
     0% {
         color: rgb(66, 85, 255);

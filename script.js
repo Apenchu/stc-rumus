@@ -1,5 +1,10 @@
 $(function() {
 
+    // saat di load 
+    $(window).on('load', function(){
+        $('.html').addClass('load');
+    });
+
     // Menampilkan Materi matematika
     $('.navigasi-materi .matematika').on('click', function() {
 
